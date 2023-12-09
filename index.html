@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper Games</title>
+
+  <script>
+    // Başlangıçta sayfanın orijinal title'ını alıyoruz
+    var orijinalTitle = document.title;
+    
+    // Kullanıcı farklı bir sekmeye gittiğinde çalışacak kod
+    document.addEventListener('visibilitychange', function() {
+        if (document.visibilityState === 'hidden') {
+            // Eğer kullanıcı başka bir sekmeye geçtiyse title'ı değiştir
+            document.title = 'Şef Ordunun Sana İhtiyacı Var!';
+        } else {
+            // Eğer kullanıcı tekrar siteye döndüyse orijinal title'ı geri yükle
+            document.title = orijinalTitle;
+        }
+    });
+    </script>
+
+  
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#">
+        <h1 class="logo">Paper Game Studios</h1>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">Paper Game Studios</a>
+
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-navbar-link>Ana Menü</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-navbar-link>Hakkımızda</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#services" class="navbar-link" data-navbar-link>Uzmanlık Alanımız</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#features" class="navbar-link" data-navbar-link>Özellikler</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="oyunlarımız.html" class="btn">
+        <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+
+        <span>Oyunlarımız</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Türk Yapımı Oyun Yapımı Şirketi</p>
+
+            <h2 class="h2 hero-title">Herkesin Sevdiği Türden Oyunlar</h2>
+
+            <p class="hero-text">
+              Hikaye,PixelART,Online gibi herkesin her türde sevdiği oyunlar
+            </p>
+
+            <button class="btn">Daha Fazla Bilgi Edin</button>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="694" height="529" loading="lazy" alt="hero-banner"
+              class="w-100 banner-animation">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="700" height="532" loading="lazy" alt="about banner"
+              class="w-100 banner-animation">
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title underline">Peki Biz Kimiz</h2>
+
+            <p class="about-text">
+              Biz 7 kişilik bir ekibiz.Ve hepimizinde ortak sevgisi olan oyun yapmak.
+              
+            </p>
+
+            <p class="about-text">
+              Bu yüzden Paper Games şirketini açtık.Daha hepimiz lise öğrencisiyiz bu yüzden yaptığımız projeleri umarım beğenirsiniz
+            </p>
+
+            <ul class="stats-list">
+
+              <li class="stats-card">
+                <p class="h3 stats-title">7</p>
+
+                <p class="stats-text">Geliştirici sayısı</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">1</p>
+
+                <p class="stats-text">Oyun</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">1</p>
+
+                <p class="stats-text">Yıllık deneyim</p>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="services">
+        <div class="container">
+
+          <h2 class="h2 section-title underline">Uzmanlık Alanımız</h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="telescope-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">
+                  Tasarım Ekibinin Önemi</h3>
+
+                <p class="text">
+                  Oyun şirketimizin en önemli uzmanlık alanlarından biri tasarım ekibidir. 
+                  Oyun dünyasında dikkat çekici ve etkileyici oyunlar üretmek için güçlü bir tasarım ekibine sahibiz. 
+                  Ekibimiz, estetik anlayışı, kullanıcı deneyimi ve oyun mekaniği konularında derin bilgiye sahiptir. 
+                  Her proje, özgün ve etkileyici tasarımlarla hayata geçirilir. 
+                  Kreatif düşünceyi teşvik eden bir ortamda çalışan tasarım ekibimiz, oyun severleri etkileyecek görsel ve işitsel deneyimler sunmak için elinden gelenin en iyisini yapar.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="desktop-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">Yazılım Tarafı ve Teknoloji</h3>
+
+                <p class="text">
+                  Diğer bir önemli uzmanlık alanımız ise yazılım tarafı ve teknoloji odaklıdır. 
+                  Unreal Engine 5 oyun motorumuz ile gerçekçi grafikler ve optimizyon ile oyunumuzu geliştirdik.
+                  Yazılım ekibimiz, oyun geliştirme süreçlerinde son teknolojileri kullanarak yüksek kaliteli ve akıcı oyunlar üretir. 
+                  Programlama konusundaki derin bilgisi sayesinde, oyunlarımızın teknik açıdan güçlü ve sorunsuz olmasını sağlar. 
+                  Ayrıca, sektördeki en son gelişmeleri yakından takip ederek, oyunlarımızı her zaman yenilikçi ve rekabetçi kılmaya özen gösteririz. 
+                  Uzman yazılım ekibimiz, oyun geliştirme sürecinin her aşamasında titizlikle çalışarak, müşterilerimize ve oyun severlere benzersiz deneyimler sunmaya kararlıdır.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="globe-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">
+                  Oyun Geliştirme Sürecinde Hikaye Yazarları</h3>
+
+                <p class="text">
+                  Oyun geliştirmenin özü, hikaye yazarlarıdır; 
+                  onlar, karakterlerin, olayların ve dünyanın ana hatlarını belirleyerek oyunculara unutulmaz deneyimler sunarlar. 
+                  Hikaye yazarlarının yaratıcılığı, oyunun sadece mekanik değil, duygusal bir bağ kurulan bir sanat eseri olmasını sağlar. 
+                  Oyun dünyasında, bir hikaye yazarının dokunuşu, oyununun kalitesini belirleyen kritik bir faktördür. 
+                  Karakter motivasyonlarından diyaloglara kadar, hikaye yazarları, oyunun temelini oluşturur ve oyuncuları etkileyici bir yolculuğa davet ederler. 
+                  Oyun geliştirme sürecinde, hikaye yazarları, sadece kelimelerle değil, aynı zamanda duygularla oynayan bir orkestra şefi gibi, oyununun melodisini yönlendirirler.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features" id="features">
+        <div class="container">
+
+          <h2 class="h2 section-title underline">YAKINDA</h2>
+
+          <ul class="features-list">
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="bulb-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">YAKINDA</h3>
+
+                  <p class="text">
+                    YAKINDA
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">YAKINDA</h3>
+
+                  <p class="text">
+                    YAKINDA
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <figure class="features-banner">
+            <img src="./assets/images/feautres-banner.png" width="369" height="318" loading="lazy" alt="Features Banner"
+              class="w-100 banner-animation">
+          </figure>
+
+          <ul class="features-list">
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">YAKINDA</h3>
+
+                  <p class="text">
+                    YAKINDA
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+
+                <div class="icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">YAKINDA</h3>
+
+                  <p class="text">
+                    YAKINDA
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Paper Games</a>
+
+          <p class="text">
+            Oyun tutkunlarına selam! Biz, oyun dünyasında iz bırakmayı hedefleyen bir ekibiz. Yaratıcılık, teknoloji ve tutku ile yoğrulmuş oyunlarımızla size eşsiz deneyimler sunuyoruz. Bizimle keşfedin, hayalinizdeki oyunlarla tanışın. Geleceği birlikte yazalım! 🎮✨
+
+Keşfetmeye hazır mısınız?
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Linkler</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Ana Menü</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Hakkımızda</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Projelerimiz</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Özellikler</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Destek</a>
+          </li>
+
+        </ul>
+
+        <!-- <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Strategy & Research</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Web Development</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Web Solution</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Digital Marketing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">App Design</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Other links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Support</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+        -->
+          <!-- <li>
+            <p class="footer-list-title">Destek</p>
+          </li> -->
+
+          <!-- <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="call"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:+2484214313" class="footer-item-link">+248-421-4313</a>
+              <a href="tel:+2486871365" class="footer-item-link">+248-687-1365</a>
+            </div>
+
+          </li> -->
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@papergames.com" class="footer-item-link">info@papergames.com</a>
+              <a href="mailto:help@papergames.com" class="footer-item-link">help@papergames.com</a>
+            </div>
+
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="location"></ion-icon>
+            </div>
+
+            <address class="footer-item-link">
+              Denizli,Türkiye
+            </address>
+
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2023 <a href="#" class="copyright-link">Paper Game Studios</a>. Bütün hakları saklıdır
+      </p>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
